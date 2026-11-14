@@ -1,0 +1,407 @@
+{
+ "model": [
+  {
+   "kunci": "acuan",
+   "label": "Acuan 20 epoch",
+   "komponen": "—",
+   "mpac": {
+    "HepG2": 0.82,
+    "K562": 0.824
+   },
+   "post": {
+    "HepG2": {
+     "pearson": 0.608651,
+     "spearman": 0.499109,
+     "median_pearson": 0.65391,
+     "median_spearman": 0.516123
+    },
+    "K562": {
+     "pearson": 0.676804,
+     "spearman": 0.53075,
+     "median_pearson": 0.683011,
+     "median_spearman": 0.528097
+    }
+   },
+   "raw": {
+    "HepG2": {
+     "pearson": 0.605583,
+     "spearman": 0.487837,
+     "median_pearson": 0.65529,
+     "median_spearman": 0.518147
+    },
+    "K562": {
+     "pearson": 0.676005,
+     "spearman": 0.524606,
+     "median_pearson": 0.680296,
+     "median_spearman": 0.527498
+    }
+   }
+  },
+  {
+   "kunci": "A",
+   "label": "A · 2 cabang",
+   "komponen": "Arsitektur: K562 + HepG2, tanpa SK-N-SH",
+   "mpac": {
+    "HepG2": 0.818,
+    "K562": 0.821
+   },
+   "post": {
+    "HepG2": {
+     "pearson": 0.607462,
+     "spearman": 0.496546,
+     "median_pearson": 0.640737,
+     "median_spearman": 0.525394
+    },
+    "K562": {
+     "pearson": 0.678601,
+     "spearman": 0.531329,
+     "median_pearson": 0.688062,
+     "median_spearman": 0.528958
+    }
+   },
+   "raw": {
+    "HepG2": {
+     "pearson": 0.60703,
+     "spearman": 0.486158,
+     "median_pearson": 0.644598,
+     "median_spearman": 0.520952
+    },
+    "K562": {
+     "pearson": 0.679474,
+     "spearman": 0.525085,
+     "median_pearson": 0.68795,
+     "median_spearman": 0.526046
+    }
+   }
+  },
+  {
+   "kunci": "B",
+   "label": "B · model per sel",
+   "komponen": "Arsitektur: satu model tiap lini sel",
+   "mpac": {
+    "HepG2": 0.817,
+    "K562": 0.82
+   },
+   "post": {
+    "HepG2": {
+     "pearson": 0.59538,
+     "spearman": 0.487067,
+     "median_pearson": 0.632501,
+     "median_spearman": 0.511699
+    },
+    "K562": {
+     "pearson": 0.65217,
+     "spearman": 0.516948,
+     "median_pearson": 0.662744,
+     "median_spearman": 0.517471
+    }
+   },
+   "raw": {
+    "HepG2": {
+     "pearson": 0.597502,
+     "spearman": 0.476359,
+     "median_pearson": 0.638886,
+     "median_spearman": 0.506258
+    },
+    "K562": {
+     "pearson": 0.655128,
+     "spearman": 0.511531,
+     "median_pearson": 0.656945,
+     "median_spearman": 0.519404
+    }
+   }
+  },
+  {
+   "kunci": "C_linear",
+   "label": "C · head linear",
+   "komponen": "Readout baru, encoder dibekukan",
+   "mpac": {
+    "HepG2": 0.821,
+    "K562": 0.824
+   },
+   "post": {
+    "HepG2": {
+     "pearson": 0.607977,
+     "spearman": 0.49221,
+     "median_pearson": 0.651864,
+     "median_spearman": 0.513726
+    },
+    "K562": {
+     "pearson": 0.677542,
+     "spearman": 0.527162,
+     "median_pearson": 0.682696,
+     "median_spearman": 0.525825
+    }
+   },
+   "raw": {
+    "HepG2": {
+     "pearson": 0.604208,
+     "spearman": 0.481176,
+     "median_pearson": 0.653376,
+     "median_spearman": 0.513232
+    },
+    "K562": {
+     "pearson": 0.677257,
+     "spearman": 0.521474,
+     "median_pearson": 0.681211,
+     "median_spearman": 0.525905
+    }
+   }
+  },
+  {
+   "kunci": "C_MLP",
+   "label": "C · head MLP",
+   "komponen": "Readout baru, encoder dibekukan",
+   "mpac": {
+    "HepG2": 0.821,
+    "K562": 0.825
+   },
+   "post": {
+    "HepG2": {
+     "pearson": 0.611168,
+     "spearman": 0.499586,
+     "median_pearson": 0.652033,
+     "median_spearman": 0.516317
+    },
+    "K562": {
+     "pearson": 0.680514,
+     "spearman": 0.531598,
+     "median_pearson": 0.683326,
+     "median_spearman": 0.528352
+    }
+   },
+   "raw": {
+    "HepG2": {
+     "pearson": 0.608912,
+     "spearman": 0.488494,
+     "median_pearson": 0.655018,
+     "median_spearman": 0.518072
+    },
+    "K562": {
+     "pearson": 0.680588,
+     "spearman": 0.525674,
+     "median_pearson": 0.680371,
+     "median_spearman": 0.527762
+    }
+   }
+  },
+  {
+   "kunci": "C_XGBoost",
+   "label": "C · head XGBoost",
+   "komponen": "Readout baru, encoder dibekukan",
+   "mpac": {
+    "HepG2": 0.823,
+    "K562": 0.827
+   },
+   "post": {
+    "HepG2": {
+     "pearson": 0.610036,
+     "spearman": 0.496495,
+     "median_pearson": 0.652353,
+     "median_spearman": 0.515069
+    },
+    "K562": {
+     "pearson": 0.674539,
+     "spearman": 0.520595,
+     "median_pearson": 0.681991,
+     "median_spearman": 0.524823
+    }
+   },
+   "raw": {
+    "HepG2": {
+     "pearson": 0.607557,
+     "spearman": 0.485616,
+     "median_pearson": 0.651335,
+     "median_spearman": 0.514856
+    },
+    "K562": {
+     "pearson": 0.674842,
+     "spearman": 0.515221,
+     "median_pearson": 0.679461,
+     "median_spearman": 0.522415
+    }
+   }
+  },
+  {
+   "kunci": "D",
+   "label": "D · tambah CRE",
+   "komponen": "Data latih: +14.086 sekuens OL15",
+   "mpac": {
+    "HepG2": 0.817,
+    "K562": 0.82
+   },
+   "post": {
+    "HepG2": {
+     "pearson": 0.596672,
+     "spearman": 0.487276,
+     "median_pearson": 0.637695,
+     "median_spearman": 0.513023
+    },
+    "K562": {
+     "pearson": 0.662794,
+     "spearman": 0.523776,
+     "median_pearson": 0.674349,
+     "median_spearman": 0.528444
+    }
+   },
+   "raw": {
+    "HepG2": {
+     "pearson": 0.594243,
+     "spearman": 0.476633,
+     "median_pearson": 0.640097,
+     "median_spearman": 0.508999
+    },
+    "K562": {
+     "pearson": 0.664838,
+     "spearman": 0.518375,
+     "median_pearson": 0.685035,
+     "median_spearman": 0.526287
+    }
+   }
+  },
+  {
+   "kunci": "E_kontrol",
+   "label": "E · kontrol 2 tahap",
+   "komponen": "Training: 15 + 5 epoch",
+   "mpac": {
+    "HepG2": 0.816,
+    "K562": 0.819
+   },
+   "post": {
+    "HepG2": {
+     "pearson": 0.599506,
+     "spearman": 0.486733,
+     "median_pearson": 0.631427,
+     "median_spearman": 0.516609
+    },
+    "K562": {
+     "pearson": 0.658736,
+     "spearman": 0.511777,
+     "median_pearson": 0.662788,
+     "median_spearman": 0.517685
+    }
+   },
+   "raw": {
+    "HepG2": {
+     "pearson": 0.597462,
+     "spearman": 0.47681,
+     "median_pearson": 0.641316,
+     "median_spearman": 0.512916
+    },
+    "K562": {
+     "pearson": 0.6608,
+     "spearman": 0.50643,
+     "median_pearson": 0.67115,
+     "median_spearman": 0.518038
+    }
+   }
+  },
+  {
+   "kunci": "E_evoaug",
+   "label": "E · EvoAug 2 tahap",
+   "komponen": "Training: augmentasi EvoAug",
+   "mpac": {
+    "HepG2": 0.799,
+    "K562": 0.808
+   },
+   "post": {
+    "HepG2": {
+     "pearson": 0.548845,
+     "spearman": 0.441331,
+     "median_pearson": 0.588779,
+     "median_spearman": 0.461885
+    },
+    "K562": {
+     "pearson": 0.639027,
+     "spearman": 0.492842,
+     "median_pearson": 0.650522,
+     "median_spearman": 0.495736
+    }
+   },
+   "raw": {
+    "HepG2": {
+     "pearson": 0.550875,
+     "spearman": 0.432074,
+     "median_pearson": 0.598425,
+     "median_spearman": 0.458198
+    },
+    "K562": {
+     "pearson": 0.642479,
+     "spearman": 0.487973,
+     "median_pearson": 0.653414,
+     "median_spearman": 0.49454
+    }
+   }
+  },
+  {
+   "kunci": "F",
+   "label": "F · filter lfcSE",
+   "komponen": "Data latih: buang lfcSE ≥ 1",
+   "mpac": {
+    "HepG2": 0.82,
+    "K562": 0.824
+   },
+   "post": {
+    "HepG2": {
+     "pearson": 0.616294,
+     "spearman": 0.508098,
+     "median_pearson": 0.65452,
+     "median_spearman": 0.523849
+    },
+    "K562": {
+     "pearson": 0.671683,
+     "spearman": 0.532657,
+     "median_pearson": 0.678387,
+     "median_spearman": 0.543952
+    }
+   },
+   "raw": {
+    "HepG2": {
+     "pearson": 0.612288,
+     "spearman": 0.49658,
+     "median_pearson": 0.655754,
+     "median_spearman": 0.521014
+    },
+    "K562": {
+     "pearson": 0.674094,
+     "spearman": 0.527347,
+     "median_pearson": 0.690569,
+     "median_spearman": 0.543592
+    }
+   }
+  }
+ ],
+ "batas": {
+  "post": {
+   "HepG2": [
+    0.9209,
+    0.9057,
+    0.9344
+   ],
+   "K562": [
+    0.9706,
+    0.9656,
+    0.9744
+   ]
+  },
+  "raw": {
+   "HepG2": [
+    0.861,
+    0.8214,
+    0.8946
+   ],
+   "K562": [
+    0.9573,
+    0.9463,
+    0.9655
+   ]
+  }
+ },
+ "n_elemen": 128,
+ "n_mutasi": 170292,
+ "sumber": {
+  "siraj": "Siraj et al. (2026), mutagenesis jenuh, 128 elemen",
+  "batas": "08 Lampiran/Skrip/batas_kebisingan_posterior.py (10 November 2026)",
+  "mpac": "05 Eksekusi/Ablasi.md, Pearson tes MPAC kromosom 7 dan 16"
+ }
+}

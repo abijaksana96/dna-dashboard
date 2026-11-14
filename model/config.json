@@ -1,0 +1,26 @@
+{
+  "branched_activation": "ReLU",
+  "branched_channels": 140,
+  "branched_dropout_p": 0.5757068086404574,
+  "conv1_channels": 300,
+  "conv1_kernel_size": 19,
+  "conv2_channels": 200,
+  "conv2_kernel_size": 11,
+  "conv3_channels": 200,
+  "conv3_kernel_size": 7,
+  "input_len": 600,
+  "linear_activation": "ReLU",
+  "linear_channels": 1000,
+  "linear_dropout_p": 0.11625456877954289,
+  "n_branched_layers": 3,
+  "n_linear_layers": 1,
+  "n_outputs": 3,
+  "output_names": [
+    "K562",
+    "HepG2",
+    "SKNSH"
+  ],
+  "use_batch_norm": true,
+  "use_weight_norm": false,
+  "variable_region_len": 200
+}
