@@ -351,7 +351,7 @@ function histogram(titik) {
       if (n) g.append(s("rect", { class: "mark", x: X + k * BW + 1, y: sy(n), width: BW - 2, height: DASAR - sy(n), fill: WARNA[sel],
         "data-tip": `${LABEL[sel]} · jarak ${fmt(k * LB, 2)}–${fmt((k + 1) * LB, 2)}\n${n} elemen` }));
     });
-    for (let t = 0; t <= nb * LB; t += 0.2) g.append(teks(X + (t / LB) * BW, DASAR + 16, fmt(t, 1), { anchor: "middle" }));
+    for (let t = 0; t <= nb * LB; t += 0.2) g.append(teks(X + (t / LB) * BW, DASAR + 16, fmt(t, 1), { anchor: t === 0 ? "start" : "middle" }));
     g.append(teks(X, DASAR + 42, "Jarak ke batas atas"));
   });
   return g;
