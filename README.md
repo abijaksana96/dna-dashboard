@@ -17,7 +17,7 @@ Buka http://127.0.0.1:8000. Dokumentasi API ada di http://127.0.0.1:8000/api/doc
 
 ## Versi daring
 
-https://abijaksana96.github.io/dna-dashboard/ memuat halaman yang sama tanpa server. Data dibaca dari berkas JSON, dan prediksi berjalan di peramban dengan model acuan dalam format ONNX lewat ONNX Runtime Web 1.30.0 dari jsDelivr. Peramban dengan WebGPU memprediksi sekuens 200 bp dalam sekitar 1,6 detik di Chrome desktop; peramban tanpa WebGPU memakai WASM dan butuh sekitar 18 detik.
+https://abijaksana96.github.io/dna-dashboard/ memuat halaman yang sama tanpa server. Data dibaca dari berkas JSON, dan prediksi berjalan di peramban dengan model acuan dalam format ONNX lewat ONNX Runtime Web 1.30.0 dari jsDelivr. Di Chrome desktop dengan WebGPU, prediksi sekuens 200 bp butuh 1,6 sampai 4 detik pada laptop penulis, ditambah unduhan model 16 MB pada pemakaian pertama. Peramban tanpa WebGPU memakai WASM dan butuh sekitar 18 detik.
 
 Folder `situs/` dibangun dengan perintah berikut, lalu isinya dipasang di cabang `gh-pages`:
 
