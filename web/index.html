@@ -7,33 +7,31 @@
   <meta name="description" content="Hasil penelitian MPAC/Malinois pada mutasi tunggal Siraj SatMut dan prediksi efek mutasi dengan model acuan.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&family=STIX+Two+Text:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
   <a class="lewati" href="#isi">Lewati ke isi</a>
-  <div class="tata">
-    <aside class="samping" aria-label="Navigasi">
-      <div class="merek">
-        <span class="tanda" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
-        <span><b>Dashboard Efek Mutasi</b><small>MPAC &rarr; Siraj SatMut</small></span>
-      </div>
-      <nav>
-        <p class="grup">Hasil penelitian</p>
+  <header class="atas">
+    <div class="bungkus atas-isi">
+      <a class="merek" href="#/ringkasan">
+        <b>Dashboard Efek Mutasi</b>
+        <small>Malinois dilatih ulang, diuji <em>zero-shot</em> pada Siraj SatMut</small>
+      </a>
+      <nav aria-label="Halaman">
         <a href="#/ringkasan" data-hal="ringkasan">Ringkasan</a>
         <a href="#/ablasi" data-hal="ablasi">Ablasi</a>
         <a href="#/elemen" data-hal="elemen">Per elemen</a>
         <a href="#/peta" data-hal="peta">Peta mutasi</a>
-        <p class="grup">Alat</p>
         <a href="#/prediksi" data-hal="prediksi">Prediksi</a>
       </nav>
-      <div class="kaki">
-        <p>Data: Siraj et al. (2026), 128 elemen, 170.292 mutasi per lini sel.</p>
-        <p>Model: MPAC/Malinois dilatih ulang, 20 epoch, satu seed.</p>
-      </div>
-    </aside>
-    <main id="isi" tabindex="-1"><p class="memuat">Memuat data&hellip;</p></main>
-  </div>
+      <div id="kontrol-global" class="kontrol"></div>
+    </div>
+  </header>
+  <main id="isi" tabindex="-1"><p class="bungkus memuat">Memuat data&hellip;</p></main>
+  <footer class="kaki">
+    <div class="bungkus">Data: Siraj et al. (2026), 128 elemen, 170.292 mutasi per lini sel. Model: MPAC/Malinois dilatih ulang, 20 <em>epoch</em>, satu <em>seed</em>.</div>
+  </footer>
   <div id="tip" role="tooltip" hidden></div>
   <script src="/static/app.js"></script>
 </body>
