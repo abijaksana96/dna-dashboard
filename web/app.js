@@ -254,7 +254,7 @@ function dotPlot() {
         const v0 = r3(model("E_kontrol")[S.target][sel][met]);
         g.append(garis(sx(v), cy, sx(v0), cy, WARNA[sel], 2),
           s("circle", { class: "mark", cx: sx(v0), cy, r: 6, fill: T.card, stroke: WARNA[sel], "stroke-width": 2, "data-tip": `E · kontrol 2 tahap · ${LABEL[sel]}\n${fmt(v0)}` }),
-          teks(sx(v0) + (v0 < v ? -10 : 10), cy, fmt(v0), { anchor: v0 < v ? "end" : "start" }),
+          teks(sx(v0), cy - 15, fmt(v0), { anchor: "middle", size: 12 }),  // di atas titik: tidak tertimpa garis acuan
           s("circle", { class: "mark", cx: sx(v), cy, r: 6, fill: WARNA[sel], stroke: T.card, "stroke-width": 2, "data-tip": `${tipTeks}\nvs kontrol ${sfmt(v - v0)}` }),
           teks(sx(v) + (v < v0 ? -10 : 10), cy, fmt(v), { fill: T.ink, tebal: true, anchor: v < v0 ? "end" : "start" }));
       } else {

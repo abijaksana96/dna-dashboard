@@ -55,8 +55,13 @@
     const ort = await muatOrt();
     ort.env.wasm.wasmPaths = ORT_URL.replace(/ort\.min\.js$/, "");
     // WebGPU bila ada (sekitar 9 kali lebih cepat di Chrome desktop), selain itu WASM di CPU
-    const ep = navigator.gpu ? ["webgpu", "wasm"] : ["wasm"];
-    cache.sesi = await ort.InferenceSession.create("model/acuan_20ep.onnx", { executionProviders: ep });
+    const buat = (ep) => ort.InferenceSession.create("model/acuan_20ep.onnx", { executionProviders: ep });
+    try {
+      cache.sesi = await buat(navigator.gpu ? ["webgpu", "wasm"] : ["wasm"]);
+    } catch (err) {  // navigator.gpu bisa ada tanpa adapter (sebagian HP): ulangi dengan CPU saja
+      console.warn("WebGPU gagal, memakai WASM:", err.message);
+      cache.sesi = await buat(["wasm"]);
+    }
     return cache.sesi;
   }
   // tiru row_pad_sequence boda2: ujung kanan pengapit kiri + sekuens + ujung kiri pengapit kanan (Python: -pad // 2 dibulatkan ke bawah)
